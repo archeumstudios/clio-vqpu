@@ -6,5 +6,5 @@
   "profile": "release",
   "repetitions": 2,
   "smoke": true,
-  "git_commit": "unavailable-uncommitted"
+  "git_commit": "314cf9e3f5c8a0eba4e21d89bfb22f73f6bcc5ef"
 }

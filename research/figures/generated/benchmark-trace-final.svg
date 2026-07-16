@@ -2,8 +2,8 @@
 <title id="title">Median runtime (ms) versus Trace level (0=off, 1=instructions, 2=state)</title><desc id="desc">Release-build medians generated from retained Clio benchmark records.</desc>
 <style>text{font:14px sans-serif;fill:#222} .axis{stroke:#444;stroke-width:1.5} polyline{fill:none;stroke:#1769aa;stroke-width:2.5} circle{fill:#1769aa}</style>
 <line class="axis" x1="90" y1="390" x2="770" y2="390"/><line class="axis" x1="90" y1="30" x2="90" y2="390"/>
-<polyline points="90.00,88.83 430.00,121.54 770.00,30.00"/><circle cx="90.00" cy="88.83" r="4"/><text x="90.00" y="78.83" text-anchor="middle">0.259</text><circle cx="430.00" cy="121.54" r="4"/><text x="430.00" y="111.54" text-anchor="middle">0.23</text><circle cx="770.00" cy="30.00" r="4"/><text x="770.00" y="20.00" text-anchor="middle">0.309</text><text x="90.00" y="414" text-anchor="middle">0</text><text x="430.00" y="414" text-anchor="middle">1</text><text x="770.00" y="414" text-anchor="middle">2</text>
+<polyline points="90.00,55.95 430.00,72.78 770.00,30.00"/><circle cx="90.00" cy="55.95" r="4"/><text x="90.00" y="45.95" text-anchor="middle">0.151</text><circle cx="430.00" cy="72.78" r="4"/><text x="430.00" y="62.78" text-anchor="middle">0.143</text><circle cx="770.00" cy="30.00" r="4"/><text x="770.00" y="20.00" text-anchor="middle">0.163</text><text x="90.00" y="414" text-anchor="middle">0</text><text x="430.00" y="414" text-anchor="middle">1</text><text x="770.00" y="414" text-anchor="middle">2</text>
 <text x="430.0" y="442" text-anchor="middle">Trace level (0=off, 1=instructions, 2=state)</text>
 <text transform="translate(24 210.0) rotate(-90)" text-anchor="middle">Median runtime (ms)</text>
-<text x="82" y="35" text-anchor="end">0.309</text><text x="82" y="395" text-anchor="end">0</text>
+<text x="82" y="35" text-anchor="end">0.163</text><text x="82" y="395" text-anchor="end">0</text>
 </svg>

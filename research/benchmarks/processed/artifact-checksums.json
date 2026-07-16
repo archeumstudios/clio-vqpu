@@ -1,8 +1,8 @@
 {
-  "research/figures/generated/benchmark-qubits.svg": "80e72e51a58bed09bfc2e19cb6e1c8ae7352789f18da93dc2c68d8605a2d4cc6",
-  "research/figures/generated/benchmark-depth.svg": "54f03e2dd7840ef7d2645b33610b38121056f51eb4bd8b5ce7f659966bbb9a86",
-  "research/figures/generated/benchmark-shots.svg": "7e89097b3b32be7e58269f6ce9a276948109fcd755bd15ea16d457a842df123d",
-  "research/figures/generated/benchmark-trace.svg": "188f4dded1a43ef94e8e0af236201eb3db58e7b1b259641eada3afb132144419",
-  "research/figures/generated/benchmark-abstraction.svg": "b4746c4daef1923f72209f3e639e3b907d3c6b598523f52712d28fab2c48412c",
-  "research/benchmarks/processed/benchmark-summary.csv": "32cad1aef162e2708cd774ad9500a9176356216a850cc45366f1a554370906bc"
+  "research/figures/generated/benchmark-qubits.svg": "94a32c131ee76513d5ba592a38c3d00a10bd474e2c67c0362ac3edf3cd9b28ac",
+  "research/figures/generated/benchmark-depth.svg": "1898ee1bd56a04d4bb05259347dda14251461bfdc9e77daa4324853c7efe27a3",
+  "research/figures/generated/benchmark-shots.svg": "b75f574d16e3bffd26ffb6bf9f5cd8d49d2402b281488d15e48ab27322c40fc1",
+  "research/figures/generated/benchmark-trace.svg": "df3815f42d2d276bcd6f28d7af87bad1f98fcae83fe486a5bc5f4e1fc574bc98",
+  "research/figures/generated/benchmark-abstraction.svg": "b31c6e7d9e53a03e4f77de64f70c378a8c29fb2716c803957f62bb7b27dd5771",
+  "research/benchmarks/processed/benchmark-summary.csv": "7784e4327c7489edf7ff9ef84005f05520e8574d232ee0dac5f44800ec23903b"
 }

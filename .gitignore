@@ -4,6 +4,7 @@
 .DS_Store
 .idea/
 .vscode/
+/output/release/
 *.cliorun
 *.cliot
 *.cliob
