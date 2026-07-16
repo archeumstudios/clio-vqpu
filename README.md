@@ -5,7 +5,7 @@ An Archeum Studios project created and led by Advaith Praveen.
 
 Clio VQPU is a software-defined virtual quantum processor with its own architecture, instruction set, processor-state model, runtime, reference execution engine, hybrid classical–quantum control system, tracing infrastructure, validation framework, and visual development environment.
 
-Clio is being built incrementally in private toward one definitive public release. The repository currently contains verified Bell, GHZ, measurement-driven branching, teleportation, Bernstein–Vazirani, and Deutsch–Jozsa paths plus checked classical arithmetic, logic, comparisons, and budgeted loops. These execute through parsing, semantic validation, assembly, resource admission, Clio Runtime, Clio Engine, tracing, results, the Rust SDK, and CLI. This is not the complete product or definitive release. See [ROADMAP.md](ROADMAP.md) for completion gates.
+This repository is the definitive public Clio release. It contains verified Bell, GHZ, Grover, QFT, measurement-driven branching, teleportation, Bernstein–Vazirani, and Deutsch–Jozsa paths plus checked classical arithmetic, logic, comparisons, and budgeted loops. These execute through parsing, semantic validation, assembly, resource admission, Clio Runtime, Clio Engine, tracing, results, replay, the Rust SDK, CLI, and Clio Studio.
 
 ## Honest execution boundary
 
@@ -25,13 +25,13 @@ The architecture is owned by Clio. External frameworks may later be optional int
 
 - `crates/`: focused Rust libraries and the `clio` CLI
 - `spec/`: normative architecture, ISA, assembly, and decision records
-- `examples/`: executable Clio Assembly workloads as support lands
+- `examples/`: executable Clio Assembly workloads
 - `docs/`: user and contributor documentation
 - `research/`: literature, novelty, protocol, and reproducibility artifacts
 - `tests/`: cross-crate conformance and integration tests (created with their implementations)
-- `apps/clio-studio/`: the future Tauri/React visual product
+- `crates/clio-studio/`: the local visual processor laboratory
 
-## Current developer checks
+## Developer checks
 
 ```bash
 cargo fmt --all -- --check
@@ -39,19 +39,19 @@ cargo clippy --workspace --all-targets --all-features -- -D warnings
 cargo test --workspace --all-targets
 ```
 
-The first executable end-to-end target is [`examples/bell-state/main.clio`](examples/bell-state/main.clio). Its exact implementation checklist is in [spec/architecture/first-end-to-end-checklist.md](spec/architecture/first-end-to-end-checklist.md), and the internal tutorial is in [docs/tutorials/bell-state.md](docs/tutorials/bell-state.md).
+The canonical introductory target is [`examples/bell-state/main.clio`](examples/bell-state/main.clio). Its exact implementation checklist is in [spec/architecture/first-end-to-end-checklist.md](spec/architecture/first-end-to-end-checklist.md), and the tutorial is in [docs/tutorials/bell-state.md](docs/tutorials/bell-state.md).
 
 ## Project governance
 
 - [Project contract](PROJECT_CONTRACT.md)
 - [Claims policy](CLAIMS_POLICY.md)
-- [Private engineering roadmap](ROADMAP.md)
+- [Engineering and release record](ROADMAP.md)
 - [Contributing](CONTRIBUTING.md)
 - [Security](SECURITY.md)
 
 ## License and citation
 
-The intended source license is Apache License 2.0, subject to the final dependency and asset audit. Citation metadata is provided in [`CITATION.cff`](CITATION.cff). No public release has occurred yet; release identifiers and DOI fields must only be filled with verified values.
+Clio is released under the Apache License 2.0. Citation metadata is provided in [`CITATION.cff`](CITATION.cff); DOI fields remain intentionally absent until the Zenodo record is published and verified.
 ## Clio Studio
 
 Launch the real visual processor laboratory locally:

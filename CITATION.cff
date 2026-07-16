@@ -8,11 +8,13 @@ authors:
     affiliation: "Archeum Studios"
 abstract: "A software-defined virtual quantum processor architecture with a custom ISA, runtime, reference execution engine, tracing, validation, developer tooling, and visual development environment."
 license: Apache-2.0
-repository-code: "https://github.com/archeum-studios/clio-vqpu"
+repository-code: "https://github.com/archeumstudios/clio-vqpu"
+version: "definitive-release"
+date-released: 2026-07-16
 keywords:
   - virtual quantum processing unit
   - quantum instruction set architecture
   - hybrid quantum computing
   - state-vector simulation
   - quantum software
-# Add the verified release date, version/tag, paper DOI, and Zenodo DOI only after publication.
+# Add only verified paper and Zenodo DOI values after the archive is published.

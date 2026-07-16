@@ -23,7 +23,7 @@ edition = "2024"
 license = "Apache-2.0"
 rust-version = "1.93"
 authors = ["Advaith Praveen <Archeum Studios>"]
-repository = "https://github.com/archeum-studios/clio-vqpu"
+repository = "https://github.com/archeumstudios/clio-vqpu"
 
 [workspace.lints.rust]
 unsafe_code = "forbid"
