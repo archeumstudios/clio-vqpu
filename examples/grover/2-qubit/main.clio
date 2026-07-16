@@ -1,0 +1,21 @@
+.program grover_11
+.seed 42
+.shots 256
+.trace off
+QALLOC q0
+QALLOC q1
+QH q0
+QH q1
+QCZ q0, q1
+QH q0
+QX q0
+QH q1
+QX q1
+QCZ q0, q1
+QX q0
+QH q0
+QX q1
+QH q1
+QMEASURE q0, m0
+QMEASURE q1, m1
+HALT

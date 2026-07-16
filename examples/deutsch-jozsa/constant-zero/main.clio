@@ -1,0 +1,23 @@
+.program deutsch_jozsa_constant_zero
+.seed 42
+.shots 256
+.trace off
+
+QALLOC q0
+QALLOC q1
+QALLOC q2
+QALLOC q3
+QX q3
+QH q0
+QH q1
+QH q2
+QH q3
+
+QH q0
+QH q1
+QH q2
+QMEASURE q0, m0
+QMEASURE q1, m1
+QMEASURE q2, m2
+HALT
+

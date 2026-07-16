@@ -1,0 +1,13 @@
+flowchart LR
+    Input["Prepare ψ on q0"] --> Pair["Create Bell pair q1–q2"]
+    Pair --> Sender["QCX q0,q1 · QH q0"]
+    Sender --> Measure["Measure q0→m0 and q1→m1"]
+    Measure --> Classical["MOV results into r0 and r1"]
+    Classical --> Z{"m0 = 1?"}
+    Z -->|"yes"| ApplyZ["QZ q2"]
+    Z -->|"no"| X
+    ApplyZ --> X{"m1 = 1?"}
+    X -->|"yes"| ApplyX["QX q2"]
+    X -->|"no"| Receiver
+    ApplyX --> Receiver["q2 contains ψ"]
+    Receiver --> Verify["Measure in known verification basis"]

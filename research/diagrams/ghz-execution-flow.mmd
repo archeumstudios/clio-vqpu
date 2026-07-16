@@ -1,0 +1,12 @@
+flowchart LR
+    Source["Clio GHZ source"] --> Validate["Parse + semantic validation"]
+    Validate --> Admit["Checked resource admission"]
+    Admit --> Allocate["Allocate q0…q(n−1)"]
+    Allocate --> H["QH q0"]
+    H --> Fanout["QCX q0, q1…q(n−1)"]
+    Fanout --> State["(|00…0⟩ + |11…1⟩)/√2"]
+    State --> Measure["Measure every qubit"]
+    Measure --> Outcomes{"Observed bit string"}
+    Outcomes --> Zero["00…0"]
+    Outcomes --> One["11…1"]
+    Outcomes --> Forbidden["Anything else → validation failure"]

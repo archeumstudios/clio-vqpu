@@ -1,0 +1,24 @@
+[package]
+name = "clio-sdk"
+version = "0.0.0"
+description = "Typed Rust developer API for Clio workflows."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+repository.workspace = true
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+clio-assembler = { path = "../clio-assembler" }
+clio-core = { path = "../clio-core" }
+clio-isa = { path = "../clio-isa" }
+clio-resource = { path = "../clio-resource" }
+clio-runtime = { path = "../clio-runtime" }
+clio-trace = { path = "../clio-trace" }
+clio-validation = { path = "../clio-validation" }
+serde.workspace = true
+thiserror.workspace = true

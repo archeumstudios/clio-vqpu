@@ -1,0 +1,23 @@
+[package]
+name = "clio-bench"
+version = "0.0.0"
+description = "Reproducible benchmark and evidence generator for Clio VQPU."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+repository.workspace = true
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+clio-resource = { path = "../clio-resource" }
+clio-sdk = { path = "../clio-sdk" }
+clio-backend = { path = "../clio-backend" }
+clio-core = { path = "../clio-core" }
+clio-engine = { path = "../clio-engine" }
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true

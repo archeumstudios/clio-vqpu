@@ -1,0 +1,29 @@
+[package]
+name = "clio-runtime"
+version = "0.0.0"
+description = "Clio processor state machine and instruction execution."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+repository.workspace = true
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+clio-backend = { path = "../clio-backend" }
+clio-core = { path = "../clio-core" }
+clio-engine = { path = "../clio-engine" }
+clio-isa = { path = "../clio-isa" }
+clio-resource = { path = "../clio-resource" }
+clio-trace = { path = "../clio-trace" }
+rand.workspace = true
+rand_chacha.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+clio-assembler = { path = "../clio-assembler" }
+serde_json.workspace = true

@@ -1,0 +1,21 @@
+[package]
+name = "clio-cli"
+version = "0.0.0"
+description = "Command-line development interface for Clio VQPU."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+repository.workspace = true
+publish = false
+
+[[bin]]
+name = "clio"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+clio-sdk = { path = "../clio-sdk" }
+serde_json.workspace = true

@@ -1,0 +1,5 @@
+.program division_by_zero
+.trace off
+LOADI r0, 7
+DIV r1, r0, 0
+HALT

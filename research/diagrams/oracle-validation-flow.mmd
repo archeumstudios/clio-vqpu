@@ -1,0 +1,12 @@
+flowchart LR
+    Workload["Clio oracle workload"] --> Assemble["Typed assembly + resource admission"]
+    Assemble --> Engine["Clio Runtime + Clio Engine"]
+    Engine --> Counts["Deterministic measurement counts"]
+    Counts --> BV{"Bernstein–Vazirani?"}
+    BV -->|"yes"| Secret["Require every shot = hidden string"]
+    BV -->|"no"| DJ["Deutsch–Jozsa classification"]
+    DJ --> Constant["All-zero → constant"]
+    DJ --> Balanced["Nonzero → balanced"]
+    Secret --> Report["Machine-readable validation report"]
+    Constant --> Report
+    Balanced --> Report

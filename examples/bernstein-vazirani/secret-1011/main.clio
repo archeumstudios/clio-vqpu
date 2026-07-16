@@ -1,0 +1,33 @@
+.program bv_1011
+.seed 42
+.shots 256
+.trace off
+
+QALLOC q0
+QALLOC q1
+QALLOC q2
+QALLOC q3
+QALLOC q4
+
+QX q4
+QH q0
+QH q1
+QH q2
+QH q3
+QH q4
+
+QCX q0, q4
+QCX q1, q4
+QCX q3, q4
+
+QH q0
+QH q1
+QH q2
+QH q3
+
+QMEASURE q0, m0
+QMEASURE q1, m1
+QMEASURE q2, m2
+QMEASURE q3, m3
+HALT
+

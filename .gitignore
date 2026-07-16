@@ -1,0 +1,11 @@
+/target/
+**/__pycache__/
+*.py[cod]
+.DS_Store
+.idea/
+.vscode/
+*.cliorun
+*.cliot
+*.cliob
+benchmarks/raw/**
+!benchmarks/raw/.gitkeep

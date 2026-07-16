@@ -1,0 +1,21 @@
+[package]
+name = "clio-validation"
+version = "0.0.0"
+description = "Conformance, numerical, statistical, and differential validation."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+repository.workspace = true
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+clio-runtime = { path = "../clio-runtime" }
+serde.workspace = true
+
+[dev-dependencies]
+clio-assembler = { path = "../clio-assembler" }
+clio-resource = { path = "../clio-resource" }

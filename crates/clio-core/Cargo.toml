@@ -1,0 +1,17 @@
+[package]
+name = "clio-core"
+version = "0.0.0"
+description = "Shared bounded architecture types and diagnostics for Clio VQPU."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+repository.workspace = true
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+serde.workspace = true
+thiserror.workspace = true

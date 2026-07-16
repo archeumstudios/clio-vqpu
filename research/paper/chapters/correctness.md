@@ -1,0 +1,7 @@
+# Correctness and Differential Validation
+
+Clio combines analytic known-answer workloads with generated numerical properties. These layers catch different failures: known answers expose algorithm or endianness mistakes, inverse tests expose non-unitary updates, invariant checks expose normalization and reduced-state errors, and dense-reference comparison exposes indexing defects that could survive self-consistency tests.
+
+The current independent-reference test applies the same generated `RY` matrices through a full output-index matrix-vector rule, rather than Clio Engine's paired in-place traversal. Across 256 operations on four qubits, every complex amplitude agrees within `1e-12`. Generated inverse tests cover 768 rotations across widths one through six and recover each initial state within the same tolerance. Five-qubit generated states retain unit total probability; every single-qubit reduced state has unit trace and Hermitian coherence.
+
+Algorithm validation is performed through the complete parser, assembler, resource planner, runtime, engine, and result validator. The two-qubit Grover program returns its marked state on every shot. The seeded three-qubit workload exceeds its frozen threshold. The QFT program applies general controlled phases and its inverse before recovering basis state `101` exactly. These observations support correctness only for the implemented gates, tested scales, declared numeric tolerance, and frozen runtime semantics.

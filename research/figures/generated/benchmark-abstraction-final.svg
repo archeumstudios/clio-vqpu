@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460" role="img" aria-labelledby="title desc">
+<title id="title">Median runtime (ms) versus Execution path (0=direct engine, 1=full SDK/runtime)</title><desc id="desc">Release-build medians generated from retained Clio benchmark records.</desc>
+<style>text{font:14px sans-serif;fill:#222} .axis{stroke:#444;stroke-width:1.5} polyline{fill:none;stroke:#1769aa;stroke-width:2.5} circle{fill:#1769aa}</style>
+<line class="axis" x1="90" y1="390" x2="770" y2="390"/><line class="axis" x1="90" y1="30" x2="90" y2="390"/>
+<polyline points="90.00,218.95 770.00,30.00"/><circle cx="90.00" cy="218.95" r="4"/><text x="90.00" y="208.95" text-anchor="middle">0.191</text><circle cx="770.00" cy="30.00" r="4"/><text x="770.00" y="20.00" text-anchor="middle">0.401</text><text x="90.00" y="414" text-anchor="middle">0</text><text x="770.00" y="414" text-anchor="middle">1</text>
+<text x="430.0" y="442" text-anchor="middle">Execution path (0=direct engine, 1=full SDK/runtime)</text>
+<text transform="translate(24 210.0) rotate(-90)" text-anchor="middle">Median runtime (ms)</text>
+<text x="82" y="35" text-anchor="end">0.401</text><text x="82" y="395" text-anchor="end">0</text>
+</svg>

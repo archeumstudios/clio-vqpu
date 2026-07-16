@@ -1,0 +1,27 @@
+{
+  "schema": "clio-evidence-checksums-1",
+  "artifacts": {
+    "output/pdf/clio-vqpu-research-paper.pdf": "44a4e1f12769e915164c19d888c522bee7a192c3efc90f828dd2da740d21a18c",
+    "research/benchmarks/external/qiskit-comparison.csv": "e42f17d428f352950bef7ddbdb6c26184a5876338f4c77de6f6bb224e497e707",
+    "research/benchmarks/external/qiskit-environment.json": "8277f62c766aa63230f92c48e11f9ca59aaa3e8a1399fca4d8bfbdc8e06e4e55",
+    "research/benchmarks/final/processed/benchmark-summary.csv": "dd54dd03768de9b70551cd12076f9134dc5e0cc258e0463f1b546bc6d130d004",
+    "research/benchmarks/final/raw/benchmark-results.csv": "cd3197ce85791a86d7fe9bc312d83ad1c82cb3b767fe942beeaa79bf8689b30a",
+    "research/benchmarks/final/raw/benchmark-results.sha256": "61b32bd662e9c0dd5e85e8230580072b71a214823cdb3f019b274b853849f7bc",
+    "research/benchmarks/processed/benchmark-summary.csv": "32cad1aef162e2708cd774ad9500a9176356216a850cc45366f1a554370906bc",
+    "research/benchmarks/processed/resource-trace-results.csv": "68facef4c6bd5269c9d15aca5c112b6f41e5d0e74218a08d78dd56689c35193a",
+    "research/benchmarks/raw/benchmark-results.csv": "97039c538a1dba2b00076d331886a05c0c5a6ac9e1dac1614bf90ce6947e84c5",
+    "research/benchmarks/raw/benchmark-results.sha256": "3d2ea6204db820b4fc213f8a0ec906ad829bef9d42b9f83c2915db3e051a36ed",
+    "research/figures/generated/benchmark-abstraction-final.svg": "1087b05ec0485a1961e2bf63d206bbeba5a587bc2eb60ad829ca32027188e1b8",
+    "research/figures/generated/benchmark-abstraction.svg": "b4746c4daef1923f72209f3e639e3b907d3c6b598523f52712d28fab2c48412c",
+    "research/figures/generated/benchmark-depth-final.svg": "8ccd137e9a35e254a1534865a930aa8e1d83a0b7072807dc88df2ead995a9df2",
+    "research/figures/generated/benchmark-depth.svg": "54f03e2dd7840ef7d2645b33610b38121056f51eb4bd8b5ce7f659966bbb9a86",
+    "research/figures/generated/benchmark-qubits-final.svg": "7ffc027a33d789433dc7da5df86d46812f378b577de737dfc0560033fbc4f8ea",
+    "research/figures/generated/benchmark-qubits.svg": "80e72e51a58bed09bfc2e19cb6e1c8ae7352789f18da93dc2c68d8605a2d4cc6",
+    "research/figures/generated/benchmark-shots-final.svg": "c6a54494039a9aa0d911ef5cfaae1e8f50a4893e0bd919854baa752e6bd7739e",
+    "research/figures/generated/benchmark-shots.svg": "7e89097b3b32be7e58269f6ce9a276948109fcd755bd15ea16d457a842df123d",
+    "research/figures/generated/benchmark-trace-final.svg": "b2bdaebd73f4754ed46c12a05c869e43ae0fc7daf223b61973810c4ee992047f",
+    "research/figures/generated/benchmark-trace.svg": "188f4dded1a43ef94e8e0af236201eb3db58e7b1b259641eada3afb132144419",
+    "research/figures/generated/clio-studio-real-execution.png": "212eb136a99a75583c79428a96ec65f59eabc808109e985a850e53040ccce55f",
+    "research/replay/bell.replay.json": "c30f3f0bf2378e03d6d0816d21847c0ad33f95a1099dc0f4306657310d701338"
+  }
+}

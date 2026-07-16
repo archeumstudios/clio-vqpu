@@ -1,0 +1,16 @@
+.program bell_state
+.seed 42
+.shots 1024
+.budget memory=1GB
+.trace instructions
+
+QALLOC q0
+QALLOC q1
+
+QH q0
+QCX q0, q1
+
+QMEASURE q0, m0
+QMEASURE q1, m1
+
+HALT

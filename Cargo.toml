@@ -1,0 +1,50 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/clio-core",
+    "crates/clio-isa",
+    "crates/clio-parser",
+    "crates/clio-assembler",
+    "crates/clio-runtime",
+    "crates/clio-engine",
+    "crates/clio-trace",
+    "crates/clio-resource",
+    "crates/clio-validation",
+    "crates/clio-backend",
+    "crates/clio-sdk",
+    "crates/clio-cli",
+    "crates/clio-bench",
+    "crates/clio-replay",
+    "crates/clio-studio",
+]
+
+[workspace.package]
+edition = "2024"
+license = "Apache-2.0"
+rust-version = "1.93"
+authors = ["Advaith Praveen <Archeum Studios>"]
+repository = "https://github.com/archeum-studios/clio-vqpu"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+missing_errors_doc = "allow"
+too_many_lines = "allow"
+
+[workspace.dependencies]
+num-complex = { version = "0.4.6", features = ["serde"] }
+rand = "0.9.2"
+rand_chacha = "0.9.0"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+sha2 = "0.10.9"
+thiserror = "2.0.12"
+
+[profile.release]
+codegen-units = 1
+lto = "thin"
+strip = "symbols"

@@ -1,0 +1,22 @@
+.program measurement_branching
+.seed 9
+.shots 1024
+.budget memory=1GB
+.trace instructions
+
+QALLOC q0
+QH q0
+QMEASURE q0, m0
+
+MOV r0, m0
+CMP r0, 0
+JZ measured_zero
+
+LOADI r1, 1
+JMP done
+
+measured_zero:
+LOADI r1, 0
+
+done:
+HALT

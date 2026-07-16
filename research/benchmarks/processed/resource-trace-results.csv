@@ -1,0 +1,4 @@
+schema,case,estimated_trace_bytes,actual_trace_bytes,trace_estimate_ratio,estimated_total_bytes,peak_rss_native_units,peak_rss_units
+clio-resource-trace-1,trace-off,0,61,0.0,65608,1851392,bytes
+clio-resource-trace-1,trace-instructions,573440,299607,1.9139739725707343,639048,2605056,bytes
+clio-resource-trace-1,trace-state,573440,527574,1.086937567052205,639048,3244032,bytes

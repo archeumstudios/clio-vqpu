@@ -1,0 +1,11 @@
+flowchart LR
+    Q["Target logical qubit qk"] --> Mask["mask = 1 << k"]
+    Mask --> Pairs["Enumerate amplitude pairs differing only at bit k"]
+    Pairs --> Pair["Read a₀ and a₁"]
+    Matrix["Validated 2×2 unitary"] --> Multiply["[a′₀,a′₁]ᵀ = U[a₀,a₁]ᵀ"]
+    Pair --> Multiply
+    Multiply --> Store["Write pair in place"]
+    Store --> Norm["Verify norm within tolerance"]
+    Norm --> Result{"Valid?"}
+    Result -->|"yes"| Continue["Continue execution"]
+    Result -->|"no"| Trap["Numerical trap"]

@@ -1,0 +1,22 @@
+[package]
+name = "clio-resource"
+version = "0.0.0"
+description = "Resource estimation, budgets, usage, and execution admission."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+repository.workspace = true
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+clio-core = { path = "../clio-core" }
+clio-isa = { path = "../clio-isa" }
+serde.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+clio-assembler = { path = "../clio-assembler" }

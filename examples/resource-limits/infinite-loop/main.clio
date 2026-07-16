@@ -1,0 +1,5 @@
+.program infinite_loop
+.trace off
+loop:
+JMP loop
+HALT

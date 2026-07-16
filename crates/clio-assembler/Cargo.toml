@@ -1,0 +1,19 @@
+[package]
+name = "clio-assembler"
+version = "0.0.0"
+description = "Semantic validation, symbol resolution, assembly, and disassembly."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+repository.workspace = true
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+clio-core = { path = "../clio-core" }
+clio-isa = { path = "../clio-isa" }
+clio-parser = { path = "../clio-parser" }
+sha2.workspace = true

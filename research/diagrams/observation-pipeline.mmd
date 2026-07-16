@@ -1,0 +1,10 @@
+flowchart LR
+  A["Final state-vector snapshot"] --> B["Basis probabilities and norm"]
+  A --> C["Qubit marginals"]
+  A --> D["Pauli X / Y / Z expectations"]
+  A --> E["Reduced single-qubit density states"]
+  B --> F["SDK ObservationReport"]
+  C --> F
+  D --> F
+  E --> F
+  F --> G["CLI observe JSON"]

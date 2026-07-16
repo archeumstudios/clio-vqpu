@@ -1,0 +1,17 @@
+[package]
+name = "clio-backend"
+version = "0.0.0"
+description = "Capability-oriented quantum execution backend contracts."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+repository.workspace = true
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+clio-core = { path = "../clio-core" }
+thiserror.workspace = true

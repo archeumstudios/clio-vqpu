@@ -1,0 +1,7 @@
+flowchart LR
+  A["Input basis state"] --> B["Hadamard + controlled phases"]
+  B --> C["Bit-order swaps"]
+  C --> D["Inverse swaps"]
+  D --> E["Inverse controlled phases + Hadamards"]
+  E --> F["Recovered input state"]
+  F --> G["Exact round-trip validator"]

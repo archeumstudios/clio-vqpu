@@ -1,0 +1,11 @@
+flowchart TB
+    State["Normalized state vector"] --> Probability["Sum |amplitude|² where target bit = 1"]
+    Probability --> Deterministic{"p is 0 or 1?"}
+    Deterministic -->|"yes"| Outcome["Select certain outcome; consume no RNG draw"]
+    Deterministic -->|"no"| Sample["Draw from versioned per-shot ChaCha8 stream"]
+    Sample --> Outcome
+    Outcome --> Zero["Zero amplitudes inconsistent with outcome"]
+    Zero --> Renormalize["Scale survivors by 1/√p(outcome)"]
+    Renormalize --> Check["Verify normalization tolerance"]
+    Check --> Register["Write Zero/One to measurement register"]
+    Register --> Trace["Record probabilistic event and state transition"]

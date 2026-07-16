@@ -1,0 +1,20 @@
+[package]
+name = "clio-engine"
+version = "0.0.0"
+description = "Independent built-in reference state-vector quantum engine."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+repository.workspace = true
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+clio-backend = { path = "../clio-backend" }
+clio-core = { path = "../clio-core" }
+num-complex.workspace = true
+serde.workspace = true
+thiserror.workspace = true

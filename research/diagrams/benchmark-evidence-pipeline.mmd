@@ -1,0 +1,11 @@
+flowchart LR
+  A["Frozen workload families"] --> B["Warm-up"]
+  B --> C["Repeated release executions"]
+  C --> D["Immutable raw CSV"]
+  C --> E["Environment manifest"]
+  D --> F["Median / min / max processor"]
+  F --> G["Processed CSV"]
+  G --> H["Editable SVG figures"]
+  D --> I["SHA-256 lineage"]
+  G --> I
+  H --> I

@@ -1,0 +1,8 @@
+flowchart LR
+  A["Seeded workload generator"] --> B["Clio Engine"]
+  A --> C["Independent dense reference"]
+  B --> D["Amplitude and probability records"]
+  C --> E["Reference records"]
+  D --> F["Tolerance comparison"]
+  E --> F
+  F --> G["Pass / retained counterexample"]

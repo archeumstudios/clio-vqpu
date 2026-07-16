@@ -1,0 +1,10 @@
+{
+  "schema": "clio-benchmark-environment-1",
+  "os": "macos",
+  "architecture": "aarch64",
+  "rustc": "rustc 1.93.0 (254b59607 2026-01-19)",
+  "profile": "release",
+  "repetitions": 10,
+  "smoke": false,
+  "git_commit": "unavailable-uncommitted"
+}

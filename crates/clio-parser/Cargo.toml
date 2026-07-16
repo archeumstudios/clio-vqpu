@@ -1,0 +1,16 @@
+[package]
+name = "clio-parser"
+version = "0.0.0"
+description = "Bounded Clio Assembly lexer, parser, AST, and source diagnostics."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+repository.workspace = true
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+clio-core = { path = "../clio-core" }

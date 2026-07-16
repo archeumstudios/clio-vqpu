@@ -1,0 +1,20 @@
+[package]
+name = "clio-studio"
+version = "0.0.0"
+description = "Clio Studio visual processor laboratory."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+repository.workspace = true
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+clio-replay = { path = "../clio-replay" }
+clio-resource = { path = "../clio-resource" }
+clio-sdk = { path = "../clio-sdk" }
+serde.workspace = true
+serde_json.workspace = true

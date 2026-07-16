@@ -1,0 +1,33 @@
+.program teleport_plus
+.seed 71
+.shots 1024
+.trace off
+
+QALLOC q0
+QALLOC q1
+QALLOC q2
+
+QH q0
+QH q1
+QCX q1, q2
+QCX q0, q1
+QH q0
+QMEASURE q0, m0
+QMEASURE q1, m1
+
+MOV r0, m0
+CMP r0, 0
+JZ skip_z
+QZ q2
+skip_z:
+
+MOV r1, m1
+CMP r1, 0
+JZ verify
+QX q2
+
+verify:
+QH q2
+QMEASURE q2, m2
+HALT
+
