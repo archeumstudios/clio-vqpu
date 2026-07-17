@@ -16,6 +16,7 @@ use std::{
 
 const INDEX: &str = include_str!("../web/index.html");
 const STYLE: &str = include_str!("../web/style.css");
+const OVERRIDES: &str = include_str!("../web/overrides.css");
 const APP: &str = include_str!("../web/app.js");
 
 #[derive(Deserialize)]
@@ -71,6 +72,7 @@ fn route(method: &str, path: &str, body: &str) -> Vec<u8> {
     match (method, path) {
         ("GET", "/") => response(200, "text/html; charset=utf-8", INDEX.as_bytes()),
         ("GET", "/style.css") => response(200, "text/css; charset=utf-8", STYLE.as_bytes()),
+        ("GET", "/overrides.css") => response(200, "text/css; charset=utf-8", OVERRIDES.as_bytes()),
         ("GET", "/app.js") => response(200, "text/javascript; charset=utf-8", APP.as_bytes()),
         ("GET", "/api/examples") => json_response(
             200,
