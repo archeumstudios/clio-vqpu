@@ -1,5 +1,7 @@
 # Clio VQPU
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21403143.svg)](https://doi.org/10.5281/zenodo.21403143)
+
 **A Programmable Virtual Quantum Processing Architecture**  
 An Archeum Studios project created and led by Advaith Praveen.
 
@@ -51,7 +53,7 @@ The canonical introductory target is [`examples/bell-state/main.clio`](examples/
 
 ## License and citation
 
-Clio is released under the Apache License 2.0. Citation metadata is provided in [`CITATION.cff`](CITATION.cff); DOI fields remain intentionally absent until the Zenodo record is published and verified.
+Clio is released under the Apache License 2.0. Citation metadata is provided in [`CITATION.cff`](CITATION.cff), and the definitive research artifact is permanently archived at [doi:10.5281/zenodo.21403143](https://doi.org/10.5281/zenodo.21403143).
 ## Clio Studio
 
 Launch the real visual processor laboratory locally:

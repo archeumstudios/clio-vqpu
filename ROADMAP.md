@@ -16,7 +16,7 @@ Clio was developed through private engineering milestones leading to one definit
 
 ## Publication record
 
-The definitive GitHub release is tagged `definitive-release`. The Zenodo DOI is intentionally recorded only after the owner publishes the exact release archive and verifies the assigned identifier.
+The definitive GitHub release is tagged `definitive-release` and permanently archived on Zenodo at [doi:10.5281/zenodo.21403143](https://doi.org/10.5281/zenodo.21403143).
 
 ## Honest boundary
 
